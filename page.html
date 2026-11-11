@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#101312">
+	<title>Controlador RGB</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js" defer></script>
+</head>
+<body>
+	<div class="estado-conexion" id="connection-status" role="status" aria-live="polite">
+		<span class="punto" aria-hidden="true"></span>
+		<span id="connection-label">ESP32 desconectado</span>
+	</div>
+	<main class="controlador">
+		<section class="espacio-trabajo" aria-labelledby="page-title">
+			<header class="introduccion">
+				<h1 id="page-title">Controlador RGB</h1>
+				<p class="descripcion">Elegí tres colores para crear un ciclo para la luz RGB.</p>
+			</header>
+
+			<section class="panel-colores" aria-label="Selector de colores">
+				<div class="controles-color">
+					<label class="selector-color" for="color-1">
+						<span class="nombre-color">ciclo 1</span>
+						<input id="color-1" name="color-1" type="color" value="#0000ff" aria-label="Elegir color 1">
+					</label>
+					<label class="selector-color" for="color-2">
+						<span class="nombre-color">ciclo 2</span>
+						<input id="color-2" name="color-2" type="color" value="#ff0000" aria-label="Elegir color 2">
+					</label>
+					<label class="selector-color" for="color-3">
+						<span class="nombre-color">ciclo 3</span>
+						<input id="color-3" name="color-3" type="color" value="#ffff00" aria-label="Elegir color 3">
+					</label>
+				</div>
+
+			</section>
+
+			<section class="nombres" aria-labelledby="names">
+				<h2 class="nombre" id="names">Nombres: Jeremias D, Franco G </h2>
+			</section>
+		</section>
+	</main>
+</body>
+</html>
